@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Curvyball',
+  tagline: 'This is not the curveball landing page, it\'s curvyball',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -9,10 +9,11 @@ module.exports = {
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
+    defaultMode: 'dark',
     navbar: {
-      title: 'My Site',
+      title: 'Curvyball',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'A curvy ball',
         src: 'img/logo.svg',
       },
       items: [
@@ -22,9 +23,14 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
+        {
+          to: 'community',
+          label: 'Community',
+          position: 'left',
+        },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/curveball/core',
           label: 'GitHub',
           position: 'right',
         },
@@ -72,12 +78,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/curveball/core',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} BadGateway.`,
     },
   },
   presets: [
